@@ -1,0 +1,21 @@
+
+LightCrawl 1.0
+Simple Crawler to casually fetch web pages for text processing
+Author: Utkarsh Desai
+
+Usage: lightcrawl <seedfile> <options>
+
+Optional Arguments:
+        1. Number of threads (-t <num>) : Default 2
+		Number of threads to be used for crawling
+        2. Number of pages to fetch (-n <num>) : Default 100
+		Number of pages to fetch during the crawl process. Specify higher number for a more comprehensive crawl.
+        3. Set of Domains to ignore (-i) <file> : Default none
+		File containing the domains to be ignored during crawl. One domain per line. 
+        4. Delay between fetch requests (-d <num>) : Default 1000ms
+		Amount of time to wait in ms between consecutive fetches
+        5. Save Queue for reuse? (-s) : Default no
+		Save queue state to resume crawling a later time. Specify the queue file as seed for the next crawl.
+        6. File types to ignore (-x <file>) : Default skiptype.set
+		File containing extentions to ignore. Defaults defined in skiptype.set
+		
